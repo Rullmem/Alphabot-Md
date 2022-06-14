@@ -165,15 +165,15 @@ setLeave: '',
 let settings = global.db.data.settings[botNumber]
 if (typeof settings !== 'object') global.db.data.settings[botNumber] = {}
 if (settings) {
-if (!('available' in settings)) settings.available = false
+if (!('available' in settings)) settings.available = true
 if (!('composing' in settings)) settings.composing = false
 if (!('recording' in settings)) settings.recording = false
-if (!('autorespond' in settings)) settings.autorespond = false
+if (!('autorespond' in settings)) settings.autorespond = true
 } else global.db.data.settings[botNumber] = {
-available: false,
+avaliable: true,
 composing: false,
 recording: false,
-autorespond:false,
+autorespond: true,
 }
 } catch (err) {
 console.log(err)
@@ -758,7 +758,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
 				var but = [
 				{
 					"urlButton": {
-						"displayText": "Website",
+						"displayText": "YouTube Creator",
 						"url": `${myweb}`
 						}
 					}
@@ -779,7 +779,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
 				var but = [
 				{
 					"urlButton": {
-						"displayText": "Website",
+						"displayText": "YouTube Creator",
 						"url": `${myweb}`
 						}
 					}
@@ -825,7 +825,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
             var but = [
 				{
 					"urlButton": {
-						"displayText": "Website",
+						"displayText": "YouTube Creator",
 						"url": `${myweb}`
 						}
 					}
@@ -844,14 +844,14 @@ if (!m.isGroup) return reply(lang.groupOnly())
           },
           {
             "urlButton": {
-              "displayText": "Rest Api's",              
+              "displayText": "YouTube Creator",              
               "url": `${myweb}`
 
             }
           },
           {
             "quickReplyButton": {
-              "displayText": "Rules",
+              "displayText": "Rules ArullBotzMD",
 "id": 'rules'
             }
           },
@@ -1002,7 +1002,7 @@ break
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "Website",
+						"displayText": "YouTube Creator",
 						"url": `${myweb}`
 						}
 					}
@@ -1027,7 +1027,7 @@ break
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "Website",
+						"displayText": "YouTube Creator",
 						"url": `${myweb}`
 						}
 					}
@@ -1051,7 +1051,7 @@ break
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "Website",
+						"displayText": "YouTube Creator",
 						"url": `${myweb}`
 						}
 					}
@@ -1080,7 +1080,7 @@ break
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "Website",
+						"displayText": "YouTube Creator",
 						"url": `${myweb}`
 						}
 					}
@@ -1581,10 +1581,10 @@ break
             break
 				case 'menu':{
 					if(typemenu == 'templateLocation'){
-						await alpha.send5ButLoc(from, lang.menunya(salam, pushname, botname) , `© ${ownername}`,pp_bot, [{"urlButton": {"displayText": "YouTube Creator","url": `${youtube}`}},{"urlButton": {"displayText": "Rest Api's","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Donasi","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "List Command","id": 'command'}}] )
+						await alpha.send5ButLoc(from, lang.menunya(salam, pushname, botname) , `© ${ownername}`,pp_bot, [{"urlButton": {"displayText": "YouTube Creator","url": `${youtube}`}},{"urlButton": {"displayText": "YouTube Creator","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Donasi","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "List Command","id": 'command'}}] )
 							}
 						if(typemenu == 'templateTenor'){
-							alpha.send5ButGif(from, lang.menunya(salam, pushname, botname) , `© ${ownername}` ,pp_bot, [{"urlButton": {"displayText": "YouTube Creator","url": `${youtube}`}},{"urlButton": {"displayText": "Rest Api's","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Donasi","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "List Command","id": 'command'}}] , {quoted: m})
+							alpha.send5ButGif(from, lang.menunya(salam, pushname, botname) , `© ${ownername}` ,pp_bot, [{"urlButton": {"displayText": "YouTube Creator","url": `${youtube}`}},{"urlButton": {"displayText": "YouTube Creator","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Donasi","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "List Command","id": 'command'}}] , {quoted: m})
 						 }
 						if(typemenu == 'katalog'){
 							alpha.sendKatalog(m.chat, "ALL MENU BOT", lang.listMenu(time, salam, pushname, prefix), pp_bot, {quoted:m})
@@ -1598,7 +1598,7 @@ break
 					}
 					break    
 	case 'allmenu':{
-			await alpha.send5ButLoc(from, `Hai kak ${pushname} 👋, saya *${botname}* ` + '\n\n' + lang.listMenu(time, salam, pushname, prefix) , `© ${ownername}`,pp_bot, [{"urlButton": {"displayText": "YouTube Creator","url": `${youtube}`}},{"urlButton": {"displayText": "Rest Api's","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Donasi","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "Rules","id": 'rules'}}] )
+			await alpha.send5ButLoc(from, `Hai kak ${pushname} 👋, saya *${botname}* ` + '\n\n' + lang.listMenu(time, salam, pushname, prefix) , `© ${ownername}`,pp_bot, [{"urlButton": {"displayText": "YouTube Creator","url": `${youtube}`}},{"urlButton": {"displayText": "YouTube Creator","url": `${myweb}`}},{"quickReplyButton": {"displayText": "Donasi","id": 'donate'}},{"quickReplyButton": {"displayText": "Owner","id": 'owner'}},{"quickReplyButton": {"displayText": "Rules","id": 'rules'}}] )
 		}
 	break   
 	case 'infocmd': case'infomenu':{
