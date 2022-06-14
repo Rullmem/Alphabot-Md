@@ -18,8 +18,8 @@ global.autoread = true // auto read pesan / message
 //global.available = true //status online (online)
 
 // Other
-global.botname = "ArullBotzMD" //namabot kalian
-global.ownername= "ArullOfc ×፝֟͜×" //nama kalian
+global.botname = "ArullBotzMD\nJangan Spam Kontoll" //namabot kalian
+global.ownername= "ArullOfc\nJangan Spam Kontoll" //nama kalian
 global.myweb ="https://youtu.be/jOhhY7ef_qM" //bebas asal jan hapus
 global.youtube = "https://youtu.be/jOhhY7ef_qM" //bebas asal jan hapus
 global.github = "https://github com/Rullmem" //bebas
@@ -27,7 +27,7 @@ global.email = "sahrulwara62@gmail.com" //bebas
 global.region = "Indonesia" //bebas
 global.ownernomer = "6285822347348" // nomor wa kalian
 global.ownernomerr = "+6285822347348" //nmr wa kalian
-global.thumbnail = "./image/lol.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
+global.thumbnail = "./image/hiruko.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
 global.background_welcome="https://telegra.ph/file/90a931648de597820bc08.jpg" // maks size 30kb, agar welcome image nya tdk delay
 global.owner = ["6285822347348","6285822347348","6285822347348"] //ganti agar fitur owner bisa di gunakan
